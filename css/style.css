@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	resize: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+	font-family: 'MapoFlowerIsland';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #34597b;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70vw;
+	height: 80vh;
+}
+
+.wrapper {
+	background-color: #e5e9eb;
+}
+
+.wrapper.form-wrapper {
+	position: relative;
+	width: 48%;
+	padding-bottom: 33px;
+}
+
+.wrapper.comment-list-wrapper {
+	width: 50%;
+	max-height: 100%;
+	overflow: scroll;
+}
+
+.wrapper .wrapper-menu-bar {
+	position: relative;
+	background-color: #212121;
+	padding: 6px 5px;
+}
+
+.wrapper-menu-bar .bar-icon {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+}
+
+.wrapper-menu-bar span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.wrapper-menu-bar span:nth-of-type(1) {
+	background-color: #e55a3e;
+}
+.wrapper-menu-bar span:nth-of-type(2) {
+	background-color: #eac21b;
+}
+.wrapper-menu-bar span:nth-of-type(3) {
+	background-color: #a0d263;
+}
+
+.wrapper-menu-bar > h2 {
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+
+section form.comment-form {
+	display: flex;
+	flex-direction: column;
+}
+
+form.comment-form input#username {
+	border: none;
+	height: 20px;
+	margin-bottom: 5px;
+}
+
+form.comment-form textarea#comment {
+	border: none;
+	height: 200px;
+	font-size: 20px;
+}
+
+form.comment-form button {
+	position: absolute;
+	bottom: 3px;
+	right: 5px;
+	padding: 5px 10px;
+	border: none;
+	background-color: #4e9ce5;
+	color: #fff;
+	cursor: pointer;
+}
+
+ul.comment-list li {
+	position: relative;
+	padding: 5px 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+li.comment-item h3 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+li.comment-item p {
+	font-size: 15px;
+}
+
+li.comment-item span.comment-date {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	font-size: 13px;
+}

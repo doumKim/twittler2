@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="wrap">
+			<section>
+				<div class="wrapper form-wrapper">
+					<div class="wrapper-menu-bar">
+						<div class="bar-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<h2>New Tweet</h2>
+					</div>
+					<form class="comment-form">
+						<input
+							id="username"
+							type="text"
+							name="username"
+							placeholder="username을 입력하세요"
+						/>
+						<textarea
+							name="tweetComment"
+							id="comment"
+							placeholder="comment를 입력하세요"
+						></textarea>
+						<button class="submit-tweet">Tweet!</button>
+					</form>
+				</div>
+				<div class="wrapper comment-list-wrapper">
+					<div class="wrapper-menu-bar">
+						<div class="bar-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<h2>Comment</h2>
+					</div>
+					<ul class="comment-list">
+						<li class="comment-item">
+							<h3>유저명</h3>
+							<p>코멘트입니다.</p>
+							<span class="comment-date">2020. 7. 1. 오후 12:37:02</span>
+						</li>
+					</ul>
+					<template class="comment-item-template">
+						<li class="comment-item">
+							<h3></h3>
+							<p></p>
+							<span class="comment-date"></span>
+						</li>
+					</template>
+				</div>
+			</section>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
